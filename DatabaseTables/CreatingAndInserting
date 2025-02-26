@@ -1,0 +1,22 @@
+//---> USER_INFO TABLE <---
+
+
+use paymentapp;
+create table user_info( user_id INT AUTO_INCREMENT PRIMARY KEY,
+	user_name varchar(20),
+	password varchar(20),	
+	first_name varchar(20),
+    last_name varchar(20),
+    phone_number bigint UNIQUE,
+    email varchar(20),
+    address varchar(30)
+    );
+    INSERT INTO user_info (user_name, password, first_name, last_name, phone_number, email, address)
+VALUES ('Alekhya', 'ale123', 'Alekhya', 'sai', 9876543210,'ale@gmail.com','vizianagaram'),
+('Lohith','pavan123','Lohith','pavan',995133622,'lohi@gmail.com','dabagardens'),
+('Hema','hema123','Hema','Latha',1234567890,'hema@gmail.com','gajuwaka'),
+('sunitha','suni123','sunitha','Reddy',2345678901,'suni@gmail.com','Birla'),
+('Akhila','Akhila123','Akhila','bhegham',3456123467,'Akhi@gmail.com','bhp'),
+('Naveen','naveen123','naveen','kumar',1234554321,'pavan@gmail.com','sindia');
+desc user_info;
+select *from user_info;
