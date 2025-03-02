@@ -9,6 +9,9 @@ public class UserAccounts {
 	 private int linkedBankAccountsCount;
 	 private String walletPin;
 	 private Users user;
+	 public UserAccounts() {
+		 super();
+	 }
 	public UserAccounts(int userAccountId, Date accountOpenDate, double currentWalletBalance,
 			int linkedBankAccountsCount, String walletPin, Users user) {
 		super();

@@ -2,12 +2,15 @@ package com.Ale;
 
 public class BankAccounts {
 	private int bankAccountId;
-    private Users user; 
     private String accountNumber;
     private String ifscCode;
     private String bankName;
     private String branch;
+    private Users user; 
     private AccountStatus accountStatus;
+    public BankAccounts() {
+    	super();
+    }
     
 	public BankAccounts(int bankAccountId, Users user, String accountNumber, String ifscCode, String bankName,
 			String branch, AccountStatus accountStatus) {

@@ -8,6 +8,9 @@ public class Users {
     private String phoneNumber;
     private String email;
     private String address;
+    public Users() {
+    	super();
+    }
 	public Users(int userId, String userName, String password, String firstName, String lastName, String phoneNumber,
 			String email, String address) {
 		super();
